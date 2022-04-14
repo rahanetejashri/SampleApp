@@ -1,0 +1,34 @@
+/* Design and implement a program in java to calculate area of circle using class and object*/
+
+import java.util.*;
+class Circle {             // circle class
+float pi=3.14f;
+float radius;
+Scanner sc= new Scanner(System.in);
+void setData(){               // class method
+System.out.println("Enter the radius of the Circle\n");
+float rad=sc.nextFloat();
+radius=rad;
+}
+float calArea(){            // class method
+float area=pi*radius*radius;
+return(area);
+}
+}                       // end of Circle class
+
+class AreaCircle{             // main class
+
+public static void main(String args[]){
+
+float area1;
+
+Circle c= new Circle();             // create object of class Circle
+c.setData();
+area1=c.calArea();                   // calculate area is assigned to area1 variable
+System.out.println("Area of the Circle is "+area1);  // printing the area of Circle
+}
+}       // end of main class
+
+
+
+
